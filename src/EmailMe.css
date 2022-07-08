@@ -1,0 +1,6 @@
+.yellowBox {
+    border: 2px;
+    border-color: yellow;
+    border-style: solid;
+    max-width: 5000px;
+}
