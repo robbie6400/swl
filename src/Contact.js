@@ -6,7 +6,7 @@ export default function Contact() {
     <>
         <h4>Contact: <br />
             (336)-509-2070 <br />
-            skyler.greensboro@gmail.com <br /><br /></h4>
+            skyler.greensboro@gmail.com <br /></h4>
             <div>
                 <h4>
                     <a href="https://www.facebook.com/SkylerWhitfieldLive/" target="_blank" rel="noopener noreferrer">FACEBOOK</a> : 

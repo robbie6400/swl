@@ -11,6 +11,7 @@ export default function EmailMe() {
                 <input type="reset" value="Clear" />
                 <input type="submit" value="Book Now" />
             </form>
+            <br />
         </div>
     </>
   )
