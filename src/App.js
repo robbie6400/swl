@@ -9,13 +9,12 @@ import Contact from "./Contact";
 import './App.css';
 
 function App() {
-  const [showsDef, setShows] = useState(["show 1", "show 2"])
   return (
     <>
       <div className="Application">
         <HeadingText />
         {/*<Slideshow />*/}
-        <ShowDates shows={showsDef} />
+        <ShowDates />
         <YTvideos />
         <SoundCloud />
         <EmailMe />
