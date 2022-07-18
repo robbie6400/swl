@@ -19,14 +19,7 @@ export default function ShowDates({shows}) {
           {APIdata.map((data) => {
             return (
             <Table.Row>
-              <Table.Cell>{data.Month}</Table.Cell>
-              <Table.Cell>{data.Day}</Table.Cell>
-              <Table.Cell>{data.Place}</Table.Cell>
-              <Table.Cell>{data.Guest}</Table.Cell>
-              <Table.Cell>{data.City}</Table.Cell>
-              <Table.Cell>{data.State}</Table.Cell>
-              <Table.Cell>{data.StartTime}</Table.Cell>
-              <Table.Cell>{data.EndTime}</Table.Cell>
+              <Table.Cell>{data.Month} {data.Day} : {data.Place} &#40; {data.Guest} &#41; &#40; {data.City} &#41; : {data.StartTime} - {data.EndTime} </Table.Cell>
             </Table.Row>
             )
           })}
