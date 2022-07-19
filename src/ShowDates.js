@@ -6,9 +6,10 @@ export default function ShowDates({shows}) {
   const [APIdata, setAPIdata] = useState([]);
 
   useEffect(() => {
-    axios.get('https://sheet.best/api/sheets/8e9ac55e-89e2-491b-b64d-c64c682eb716')
+    axios.get('https://skylershows-9df9.restdb.io/media/skyler-whitfield-live-shows?key=62d6bf9d1e03721dd87cd64f')
     .then((incomingData) => {
-      setAPIdata(incomingData.data)
+      // setAPIdata(incomingData.data)
+      console.log(incomingData.data)
     })  
   }, [])
 
@@ -19,7 +20,7 @@ export default function ShowDates({shows}) {
           {APIdata.map((data) => {
             return (
             <Table.Row>
-              <Table.Cell>{data.Month} {data.Day} : {data.Place} &#40; {data.Guest} &#41; &#40; {data.City} &#41; : {data.StartTime} - {data.EndTime} </Table.Cell>
+              <Table.Cell>{data.Month} {data.MonthNum} {data.Day} : {data.Place} &#40; {data.Guest} &#41; &#40; {data.City} &#41; : {data.StartTime} - {data.EndTime} </Table.Cell>
             </Table.Row>
             )
           })}
