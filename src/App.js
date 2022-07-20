@@ -13,10 +13,10 @@ function App() {
     <>
       <div className="Application">
         <HeadingText />
-        {/*<Slideshow />*/}
-        <ShowDates />
+        <Slideshow />
+        {/*<ShowDates />
         <YTvideos />
-        <SoundCloud />
+        <SoundCloud />*/}
         <EmailMe />
         <Contact />
       </div>
