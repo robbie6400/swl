@@ -1,15 +1,15 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button, Form, Table, Header } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 
 export default function ShowDates({shows}) {
   const [APIdata, setAPIdata] = useState([]);
 
   useEffect(() => {
-    axios.get('https://skylershows-9df9.restdb.io/media/skyler-whitfield-live-shows?key=62d6bf9d1e03721dd87cd64f')
+    axios.get('https://sheet.best/api/sheets/33e25406-953e-4ecd-b6cb-91cfc124b90f')
     .then((incomingData) => {
-      // setAPIdata(incomingData.data)
-      console.log(incomingData.data)
+      setAPIdata(incomingData.data)
+      //console.log(incomingData.data)
     })  
   }, [])
 
@@ -20,7 +20,7 @@ export default function ShowDates({shows}) {
           {APIdata.map((data) => {
             return (
             <Table.Row>
-              <Table.Cell>{data.Month} {data.MonthNum} {data.Day} : {data.Place} &#40; {data.Guest} &#41; &#40; {data.City} &#41; : {data.StartTime} - {data.EndTime} </Table.Cell>
+              <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} &#40; {data.City} &#41; : {data.StartTime} - {data.EndTime} </Table.Cell>
             </Table.Row>
             )
           })}
