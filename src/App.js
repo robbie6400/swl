@@ -14,9 +14,9 @@ function App() {
       <div className="Application">
         <HeadingText />
         <Slideshow />
-        {/*<ShowDates />
+        <ShowDates />
         <YTvideos />
-        <SoundCloud />*/}
+        <SoundCloud />
         <EmailMe />
         <Contact />
       </div>
