@@ -35,7 +35,7 @@ export default function ShowDates({shows}) {
                 }).map((data) => {
                   return (
                     <Table.Row>
-                      <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} : {data.Time}</Table.Cell>
+                      <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} {data.Time}</Table.Cell>
                     </Table.Row>
                   )
                 })}
@@ -61,7 +61,7 @@ export default function ShowDates({shows}) {
                 }).map((data) => {
                   return (
                     <Table.Row>
-                      <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} : {data.Time}</Table.Cell>
+                      <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} {data.Time}</Table.Cell>
                     </Table.Row>
                   )
                 })}
