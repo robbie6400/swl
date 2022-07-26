@@ -18,22 +18,23 @@ const fadeImages = [
 
 export default function Slideshow() {
   return (
-    <div className="slide-container">
+    <div className="slide-container" height="450px">
       <Fade>
+       
         <div className="each-fade">
-          <img src={fadeImages[0]} width="700" height="450" />
+          <img src={fadeImages[0]} width="40%" height="40%" />
+        </div>         
+        <div className="each-fade">
+          <img src={fadeImages[3]} width="17.8%" height="18%" />
         </div>
         <div className="each-fade">
-          <img src={fadeImages[3]} width="300" height="450" />
+          <img src={fadeImages[1]} width="26.6%" height="26.6%"/>
         </div>
         <div className="each-fade">
-          <img src={fadeImages[1]} width="450" height="450"/>
+          <img src={fadeImages[4]} width="17.8%" height="18%" />
         </div>
         <div className="each-fade">
-          <img src={fadeImages[4]} width="300" height="450" />
-        </div>
-        <div className="each-fade">
-          <img src={fadeImages[2]} width="700" height="450" />
+          <img src={fadeImages[2]} width="40%" height="40%" />
         </div>
       </Fade>
     </div>
