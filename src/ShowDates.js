@@ -40,7 +40,7 @@ export default function ShowDates({shows}) {
                   )
                 })}
 
-            <h3>--------------------------------------------------------</h3>
+            <h3>----------------------------------------</h3>
             <h3>{monthNames[currMonth+1]} {currYear}</h3>
 
             {APIdata.filter((data)=>{
@@ -53,7 +53,7 @@ export default function ShowDates({shows}) {
                   )
                 })}
 
-            <h3>--------------------------------------------------------</h3>
+            <h3>----------------------------------------</h3>
             <h3>{monthNames[currMonth+2]} {currYear}</h3>
 
             {APIdata.filter((data)=>{
@@ -68,7 +68,7 @@ export default function ShowDates({shows}) {
           </Table.Body>
         </Table>
       </div>
-      <h3>--------------------------------------------------------</h3>
+      <h3>----------------------------------------</h3>
       <br />
     </>
   )
