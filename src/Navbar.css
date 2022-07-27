@@ -1,0 +1,27 @@
+ul {
+    font-family: Verdana,Geneva,sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+  }
+
+  li {
+    display: inline-block;
+  }
+  
+  li Link {
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li Link:visited {
+    background-color: #000000;
+  }

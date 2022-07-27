@@ -68,8 +68,6 @@ export default function ShowDates({shows}) {
           </Table.Body>
         </Table>
       </div>
-      <h3>----------------------------------------</h3>
-      <br />
     </>
   )
 }
