@@ -6,8 +6,7 @@ export default function AllShows() {
     const [APIdata, setAPIdata] = useState([]);
 
     const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-    ];
+    "July", "August", "September", "October", "November", "December", "January", "February"];
   
     const current = new Date();
     const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
