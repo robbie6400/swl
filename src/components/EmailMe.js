@@ -1,5 +1,5 @@
 import React from 'react'
-import './EmailMe.css';
+import '../css/EmailMe.css';
 
 export default function EmailMe() {
   return (

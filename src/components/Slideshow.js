@@ -1,12 +1,11 @@
 import React from "react";
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import "./Slideshow.css";
-import skyler1 from "./images/skyler.jpg"
-import skyler2 from "./images/skyler1.png"
-import skyler3 from "./images/skyler2.jpg"
-import skyler4 from "./images/skyler3.jpg"
-import skyler5 from "./images/skyler4.jpg"
+import skyler1 from "../images/skyler.jpg"
+import skyler2 from "../images/skyler1.png"
+import skyler3 from "../images/skyler2.jpg"
+import skyler4 from "../images/skyler3.jpg"
+import skyler5 from "../images/skyler4.jpg"
 
 const fadeImages = [
   skyler1,
@@ -20,7 +19,6 @@ export default function Slideshow() {
   return (
     <div className="slide-container" height="450px">
       <Fade>
-       
         <div className="each-fade">
           <img src={fadeImages[0]} width="40%" height="40%" />
         </div>         
