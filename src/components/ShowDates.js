@@ -41,7 +41,7 @@ export default function ShowDates({shows}) {
                 })}
 
             <h3>----------------------------------------</h3>
-            <h3>{monthNames[currMonth+1]} {currYear}</h3>
+            <h3>January {currYear+1}</h3>
 
             {APIdata.filter((data)=>{
                   return data.MonthNum === currMonth+2
@@ -54,7 +54,7 @@ export default function ShowDates({shows}) {
                 })}
 
             <h3>----------------------------------------</h3>
-            <h3>{monthNames[currMonth+2]} {currYear+1}</h3>
+            <h3>February {currYear+1}</h3>
 
             {APIdata.filter((data)=>{
                   return data.MonthNum === currMonth+3
