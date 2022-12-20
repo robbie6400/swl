@@ -49,7 +49,7 @@ export default function ShowDates({shows}) {
             <h3>{monthNames[currMonth1]} {currMonth+1 > 12 ? currYear +1 : currYear}</h3>
 
               {APIdata.filter((data)=>{
-                    return data.MonthNum == currMonth1
+                    return data.MonthNum == currMonth+1
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -62,7 +62,7 @@ export default function ShowDates({shows}) {
             <h3>{monthNames[currMonth2]} {currMonth+2 > 12 ? currYear +1 : currYear}</h3>
             
                 {APIdata.filter((data)=>{
-                  return data.MonthNum == currMonth2
+                  return data.MonthNum == currMonth+2
                 }).map((data) => {
                   return (
                     <Table.Row>
