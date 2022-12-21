@@ -14,7 +14,7 @@ export default function AllShows() {
     const currYear = current.getFullYear();
   
     useEffect(() => {
-      axios.get('https://skylershows-9df9.restdb.io/rest/skyler-whitfield-live-shows?&apikey=62d843fb1e03721dd87cd693')
+      axios.get('https://skylershows-dce3.restdb.io/rest/skyler-whitfield-live-shows?&apikey=63a290def43a573dae095661')
       .then((incomingData) => {
         setAPIdata(incomingData.data)
         console.log(incomingData.data)
@@ -30,21 +30,21 @@ export default function AllShows() {
               <h3>{monthNames[0]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 1
-                  }).map((data) => {
-                    return (
-                      <Table.Row>
-                        <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} {data.Time}</Table.Cell>
-                      </Table.Row>
-                    )
-                  })}
+                  return data.MonthNum == 1 && data.Year == currYear
+                }).map((data) => {
+                  return (
+                    <Table.Row>
+                      <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} {data.Time}</Table.Cell>
+                    </Table.Row>
+                  )
+                })}
   
               <h3>----------------------------------------</h3>
               
               <h3>{monthNames[1]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 2
+                    return data.MonthNum === 2 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -58,7 +58,7 @@ export default function AllShows() {
                 <h3>{monthNames[2]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 3
+                    return data.MonthNum === 3 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -72,7 +72,7 @@ export default function AllShows() {
               <h3>{monthNames[3]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 4
+                    return data.MonthNum === 4 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -86,7 +86,7 @@ export default function AllShows() {
               <h3>{monthNames[4]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 5
+                    return data.MonthNum === 5 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -100,7 +100,7 @@ export default function AllShows() {
               <h3>{monthNames[5]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 6
+                    return data.MonthNum === 6 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -114,7 +114,7 @@ export default function AllShows() {
                 <h3>{monthNames[6]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 7
+                    return data.MonthNum === 7 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -128,7 +128,7 @@ export default function AllShows() {
               <h3>{monthNames[7]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 8
+                    return data.MonthNum === 8 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -142,7 +142,7 @@ export default function AllShows() {
               <h3>{monthNames[8]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 9
+                    return data.MonthNum === 9 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -156,7 +156,7 @@ export default function AllShows() {
               <h3>{monthNames[9]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 10
+                    return data.MonthNum === 10 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -170,7 +170,7 @@ export default function AllShows() {
                 <h3>{monthNames[10]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 11
+                    return data.MonthNum === 11 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -184,7 +184,7 @@ export default function AllShows() {
               <h3>{monthNames[11]} {currYear}</h3>
   
               {APIdata.filter((data)=>{
-                    return data.MonthNum === 12
+                    return data.MonthNum === 12 && data.Year == currYear
                   }).map((data) => {
                     return (
                       <Table.Row>

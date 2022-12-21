@@ -14,13 +14,17 @@ export default function ShowDates({shows}) {
   const currMonth = current.getMonth()+1;
   //const currMonth = 12;
   const currYear = current.getFullYear();
+  
+  const currYear0 = currMonth > 12 ? currYear +1 : currYear;
+  const currYear1 = currMonth+1 > 12 ? currYear +1 : currYear;
+  const currYear2 = currMonth+2 > 12 ? currYear +1 : currYear;
 
   const currMonth0 = currMonth > 12 ? currMonth-12 : currMonth;
   const currMonth1 = currMonth+1 > 12 ? currMonth+1-12 : currMonth+1;
   const currMonth2 = currMonth+2 > 12 ? currMonth+2-12 : currMonth+2;
 
   useEffect(() => {
-    axios.get('https://skylershows-9df9.restdb.io/rest/skyler-whitfield-live-shows?&apikey=62d843fb1e03721dd87cd693')
+    axios.get('https://skylershows-dce3.restdb.io/rest/skyler-whitfield-live-shows?&apikey=63a290def43a573dae095661')
     .then((incomingData) => {
       setAPIdata(incomingData.data)
       console.log(incomingData.data)
@@ -33,10 +37,10 @@ export default function ShowDates({shows}) {
         <Table>
           <Table.Body>
 
-          <h3>{monthNames[currMonth0]} {currMonth > 12 ? currYear +1 : currYear}</h3>
+          <h3>{monthNames[currMonth0]} {currYear0}</h3>
             
             {APIdata.filter((data)=>{
-                  return data.MonthNum == currMonth0
+                  return data.MonthNum == currMonth0 && data.Year !== currYear1
                 }).map((data) => {
                   return (
                     <Table.Row>
@@ -46,10 +50,10 @@ export default function ShowDates({shows}) {
                 })}
 
             <h3>----------------------------------------</h3>
-            <h3>{monthNames[currMonth1]} {currMonth+1 > 12 ? currYear +1 : currYear}</h3>
+            <h3>{monthNames[currMonth1]} {currYear1}</h3>
 
               {APIdata.filter((data)=>{
-                    return data.MonthNum == currMonth+1
+                    return data.MonthNum == currMonth1 && data.Year == currYear1
                   }).map((data) => {
                     return (
                       <Table.Row>
@@ -59,10 +63,10 @@ export default function ShowDates({shows}) {
                   })}
 
             <h3>----------------------------------------</h3>
-            <h3>{monthNames[currMonth2]} {currMonth+2 > 12 ? currYear +1 : currYear}</h3>
+            <h3>{monthNames[currMonth2]} {currYear2}</h3>
             
                 {APIdata.filter((data)=>{
-                  return data.MonthNum == currMonth+2
+                  return data.MonthNum == currMonth2 && data.Year == currYear2
                 }).map((data) => {
                   return (
                     <Table.Row>
