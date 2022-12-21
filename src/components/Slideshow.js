@@ -26,21 +26,21 @@ export default function Slideshow() {
         <div className="each-fade">
           <img src={fadeImages[0]} width="40%" height="40%" />
         </div>
-        <div className="each-fade">
+        {/* <div className="each-fade">
           <img src={fadeImages[1]} width="40%" height="40%" />
-        </div>          
+        </div>           */}
         <div className="each-fade">
           <img src={fadeImages[2]} width="17.77%" height="18%" />
         </div>
         <div className="each-fade">
-          <img src={fadeImages[3]} width="40%" height="40%" />
-        </div> 
-        <div className="each-fade">
-          <img src={fadeImages[4]} width="17.77%" height="18%" />
+          <img src={fadeImages[1]} width="40%" height="40%" />
         </div>
         <div className="each-fade">
-          <img src={fadeImages[5]} width="40%" height="40%" />
+          <img src={fadeImages[4]} width="17.77%" height="18%" />
         </div> 
+        {/* <div className="each-fade">
+          <img src={fadeImages[5]} width="40%" height="40%" />
+        </div>  */}
         <div className="each-fade">
           <img src={fadeImages[6]} width="40%" height="40%" />
         </div>
