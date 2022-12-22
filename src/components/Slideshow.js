@@ -24,19 +24,19 @@ export default function Slideshow() {
     <div className="slide-container" height="450px">
       <Fade>
         <div className="each-fade">
-          <img src={fadeImages[6]} width="40%" height="40%" />
+          <img src={fadeImages[6]} width="40%" height="40%" alt="skylerLiveImg1"/>
         </div>
         <div className="each-fade">
-          <img src={fadeImages[2]} width="17.77%" height="18%" />
+          <img src={fadeImages[2]} width="17.77%" height="18%" alt="skylerLiveImg2"/>
         </div>
         <div className="each-fade">
-          <img src={fadeImages[1]} width="47%" height="47%" />
+          <img src={fadeImages[1]} width="47%" height="47%" alt="skylerLiveImg3"/>
         </div>
         <div className="each-fade">
-          <img src={fadeImages[4]} width="17.77%" height="18%" />
+          <img src={fadeImages[4]} width="17.77%" height="18%" alt="skylerLiveImg4"/>
         </div> 
         <div className="each-fade">
-          <img src={fadeImages[5]} width="40%" height="40%" />
+          <img src={fadeImages[5]} width="40%" height="40%" alt="skylerLiveImg5"/>
         </div>
       </Fade>
         <br />
