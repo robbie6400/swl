@@ -12,7 +12,7 @@ export default function ShowDates({shows}) {
   const current = new Date();
   const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   const currMonth = current.getMonth()+1;
-  //const currMonth = 12;
+  //const currMonth = 11;
   const currYear = current.getFullYear();
   
   const currYear0 = currMonth > 12 ? currYear +1 : currYear;
@@ -40,7 +40,7 @@ export default function ShowDates({shows}) {
           <h3>{monthNames[currMonth0]} {currYear0}</h3>
             
             {APIdata.filter((data)=>{
-                  return data.MonthNum == currMonth0 && data.Year !== currYear1
+                  return data.MonthNum == currMonth0 && data.Year == currYear1
                 }).map((data) => {
                   return (
                     <Table.Row>
