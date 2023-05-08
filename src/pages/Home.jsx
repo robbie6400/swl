@@ -7,6 +7,7 @@ import HeadingText from '../components/HeadingText';
 import EmailMe from '../components/EmailMe';
 import Contact from '../components/Contact';
 import Navbar1 from "../components/NavbarToShows";
+import AlbumRelease from '../components/AlbumRelease';
 
 export default function Home() {
   return (
