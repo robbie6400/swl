@@ -9,6 +9,7 @@ import AllShows from '../components/AllShows';
 export default function Shows() {
   return (
     <div>
+        <AlbumRelease/>
         <HeadingText />
         <Navbar2 />
         <AllShows />
