@@ -11,6 +11,7 @@ import Navbar1 from "../components/NavbarToShows";
 export default function Home() {
   return (
     <div>
+        <AlbumRelease/>
         <HeadingText />
         <Slideshow />
         <ShowDates />
