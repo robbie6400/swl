@@ -4,6 +4,7 @@ import EmailMe from '../components/EmailMe';
 import Contact from '../components/Contact';
 import Navbar2 from "../components/NavbarToHome";
 import AllShows from '../components/AllShows';
+import AlbumRelease from '../components/AlbumRelease';
 
 
 export default function Shows() {
