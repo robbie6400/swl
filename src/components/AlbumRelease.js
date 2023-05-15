@@ -4,7 +4,7 @@ import '../css/AlbumRelease.css';
 export default function AlbumRelease() {
   return (
     <div className="release">
-        <a href="https://distrokid.com/hyperfollow/skylerwhitfield/mason" target="_blank">PRE-SAVE MY NEW ALBUM HERE !</a>
+        <a href="https://linktr.ee/masonskylerwhifield" target="_blank">DOWNLOAD MY NEW ALBUM "MASON" HERE !</a>
     </div>
   )
 }
