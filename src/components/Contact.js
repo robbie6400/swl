@@ -11,7 +11,7 @@ export default function Contact() {
                 <h4>
                     <a href="https://www.facebook.com/SkylerWhitfieldLive/" target="_blank" rel="noopener noreferrer">FACEBOOK</a> : 
                     <a href="https://www.youtube.com/channel/UC2PDKc7mezW8bSkvv0NiyKQ/" target="_blank" rel="noopener noreferrer">YOUTUBE</a> : 
-                    <a href="https://account.venmo.com/u/skylerwhitfieldlive" target="_blank" rel="noopener noreferrer">VENMO</a> 
+                    <a href="https://account.venmo.com/u/skylerwhitfieldlive" target="_blank" rel="noopener noreferrer">VENMO</a> : 
                     <a href="https://www.soundcloud.com/user-238870048/" target="_blank" rel="noopener noreferrer">SOUNDCLOUD</a> 
                 </h4>
             </div>
