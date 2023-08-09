@@ -1,12 +1,14 @@
 .release {
     border: 10px;
-    border-color: goldenrod;
+    border-color: #daa520;
     background-color: yellow;
+    border-radius: 5ch;
     border-style: solid;
     fill: yellow;
     max-width: 5000px;
     padding: 3em;
     color: black;
+    
 }
 
 .release a {

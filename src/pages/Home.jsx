@@ -12,7 +12,7 @@ import AlbumRelease from '../components/AlbumRelease';
 export default function Home() {
   return (
     <div>
-        <AlbumRelease/>
+        {/*<AlbumRelease/>*/}
         <HeadingText />
         <Slideshow />
         <ShowDates />
