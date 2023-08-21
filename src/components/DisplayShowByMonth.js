@@ -19,7 +19,7 @@ export default function DisplayShowByMonth( {monthParam} ) {
 
 
   useEffect(() => {
-    axios.get('http://skylershowsn-8b98.restdb.io/rest/showscollection?&apikey=64d3e666a3ea46156b978d02')
+    axios.get('http://skylershowsn-8b98.restdb.io/rest/showscollection?sort=startDateTime&apikey=64d3e666a3ea46156b978d02')
     .then((incomingData) => {
       setAPIdata(incomingData.data)
       console.log(incomingData.data)
@@ -37,14 +37,15 @@ export default function DisplayShowByMonth( {monthParam} ) {
           {APIdata.filter((data)=>{
                   return new Date(data.startDateTime).getMonth()+1 == currMonth0
                 }).map((data) => {
-              
+
               const currDate = new Date(data.startDateTime);
               const venueArr = data.VenueID && data.VenueID[0] ? data.VenueID[0] : "";
               const currDisplayDate = dayjs(currDate).format('MMMM D');
-              const cityStateDisplay = (venueArr.city == "") ? "" :  "( " + venueArr.city + ", " + venueArr.state + " )";
+              const cityStateDisplay = (venueArr.city == "") || venueArr.city == null ? "" :  "( " + venueArr.city + ", " + venueArr.state + " )";
               const guestDisplay = data.Guest.length >= 1 ?  "( " + data.Guest + " )" : "";
-              const enDateDisplay = dayjs(currDate).format('h:mm A') + " - " + dayjs(data.endTime).format('h:mm A');
-              const timeDisplay = guestDisplay.includes("National Anthem") ? "": ": " + enDateDisplay;
+              const endDateDisplay = dayjs(currDate).format('h:mm A') + " - " + data.endTime;
+              const timeDisplay = guestDisplay.includes("Album Release") || guestDisplay.includes("National Anthem") || venueArr.place.includes("Private Event") 
+                          ? "": ": " + endDateDisplay;
             
                   return (
                     <Table.Row>

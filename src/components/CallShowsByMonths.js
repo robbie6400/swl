@@ -7,7 +7,7 @@ export default function CallShowsByMonths({ startMonth, endMonth }) {
   return (
     <div>
       {months.map((month) => (
-        <DisplayShowByMonth monthParam={month} />
+        <DisplayShowByMonth monthParam={month} />   
       ))}
     </div>
   );
