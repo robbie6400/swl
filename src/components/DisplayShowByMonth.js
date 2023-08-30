@@ -19,7 +19,7 @@ export default function DisplayShowByMonth( {monthParam} ) {
 
 
   useEffect(() => {
-    axios.get('http://skylershowsn-8b98.restdb.io/rest/showscollection?sort=startDateTime&apikey=64d3e666a3ea46156b978d02')
+    axios.get('https://skylershowsn-8b98.restdb.io/rest/showscollection?sort=startDateTime&apikey=64d3e666a3ea46156b978d02')
     .then((incomingData) => {
       setAPIdata(incomingData.data)
       console.log(incomingData.data)
