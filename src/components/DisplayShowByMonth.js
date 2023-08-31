@@ -43,7 +43,7 @@ export default function DisplayShowByMonth( {monthParam} ) {
               const currDisplayDate = dayjs(currDate).format('MMMM D');
               const cityStateDisplay = (venueArr.city == "") || venueArr.city == null ? "" :  "( " + venueArr.city + ", " + venueArr.state + " )";
               const guestDisplay = data.Guest.length >= 1 ?  "( " + data.Guest + " )" : "";
-              const endDateDisplay = dayjs(currDate).format('h:mm A') + " - " + data.endTime;
+              const endDateDisplay = dayjs(currDate).format('h:mm A') + " - " + dayjs(data.endTime).format('h:mm A');
               const timeDisplay = guestDisplay.includes("Album Release") || guestDisplay.includes("National Anthem") || venueArr.place.includes("Private Event") 
                           ? "": ": " + endDateDisplay;
             
