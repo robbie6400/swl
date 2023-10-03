@@ -4,14 +4,14 @@ import HeadingText from '../components/HeadingText';
 import EmailMe from '../components/EmailMe';
 import Contact from '../components/Contact';
 import AlbumRelease from '../components/AlbumRelease';
-import SocialMediaIcons from '../components/SocialMediaIcons';
+import SocialMediaIconsShort from '../components/SocialMediaIconsShort';
 
 const Layout = () => {
   return (
     <>    
       <AlbumRelease />
       <HeadingText />
-      <SocialMediaIcons />
+      <SocialMediaIconsShort />
       <Outlet />
       <EmailMe />
       <Contact />
