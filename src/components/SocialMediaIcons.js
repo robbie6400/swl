@@ -13,7 +13,7 @@ export default function SocialMediaIcons() {
         <SocialIcon url="https://www.youtube.com/channel/UC2PDKc7mezW8bSkvv0NiyKQ/" target="_blank" network="youtube" bgColor="yellow" />
         <SocialIcon url="https://www.facebook.com/SkylerWhitfieldLive/" target="_blank" network="facebook" bgColor="yellow" />
         <SocialIcon url="https://account.venmo.com/u/skylerwhitfieldlive" target="_blank" network="vimeo" bgColor="yellow" label="Venmo"/>
-        <SocialIcon url="https://account.venmo.com/u/skylerwhitfieldlive" target="_blank" network="sharethis" bgColor="yellow" label="Cashapp"/>
+        <SocialIcon url="https://cash.app/$skylerwhitfieldlive" target="_blank" network="sharethis" bgColor="yellow" label="Cashapp"/>
 
       </div>
       <br />

@@ -15,8 +15,6 @@ export default function SocialMediaIconsShort() {
           <h2> Cashapp</h2>
         </div>
       </div>
-            
-      <br />
     </>
   )
 }

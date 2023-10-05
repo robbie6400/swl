@@ -10,8 +10,9 @@ const Layout = () => {
   return (
     <>    
       <AlbumRelease />
-      <HeadingText />
+      <h1>Skyler Whitfield Live</h1>
       <SocialMediaIconsShort />
+      <HeadingText />
       <Outlet />
       <EmailMe />
       <Contact />
