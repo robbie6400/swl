@@ -40,7 +40,7 @@ export default function ShowDates({shows}) {
           <h3>{monthNames[currMonth0]} {currYear0}</h3>
             
             {APIdata.filter((data)=>{
-                  return data.MonthNum == currMonth0 && data.Year == currYear1
+                  return data.MonthNum == currMonth0 && data.Year == currYear0
                 }).map((data) => {
                   return (
                     <Table.Row>
