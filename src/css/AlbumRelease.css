@@ -1,37 +1,53 @@
 .release {
-    border: 10px;
-    border-color: goldenrod;
-    background-color: yellow;
-    border-style: solid;
+    /* border: 10px; */
+    /* border-color: yellow; */
+    background-color: black;
+    /* border-style: solid; */
     fill: yellow;
     max-width: 5000px;
     padding: 3em;
-    color: black;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .release a {
-    color: black;
+    color: white;
     font-size: 200%;
     text-decoration: none;
 }
 
+.release a:link, a:visited {
+    background-color: black;
+    color: white;
+    border: 10px solid yellow;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+.release a:hover, a:active {
+    background-color: yellow;
+    color: black;
+  }
 
-.release a:hover {
+/* .release a:hover, a:active, a:visited {
     color: black;
     font-size: 200%;
     text-decoration: none;
-    border-color: goldenrod;
-    background-color: goldenrod;
+    border-color: yellow;
+    background-color: yellow;
 }
 
 .release a:active {
-    color: black;
+    color: white;
     font-size: 200%;
     text-decoration: none;
 }
 
 .release a:visited {
-    color: black;
+    color: white;
     font-size: 200%;
     text-decoration: none;
-}
+} */

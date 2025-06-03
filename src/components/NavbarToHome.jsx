@@ -19,4 +19,4 @@ function NavbarToHome() {
 
 export default NavbarToHome;
 
-<Link target="_blank" to="/shows"><b>SEE ALL SHOWS</b></Link>
+{/* <Link target="_blank" to="/shows"><b>SEE ALL SHOWS</b></Link> */}

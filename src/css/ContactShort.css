@@ -1,13 +1,36 @@
 .container {
     display: flex; /* or inline-flex */
     justify-content: center;
-    margin: auto;
     align-items: center;
-    padding-bottom: .75%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.container h2 {
+.container h1 {
     padding-left: 7.5px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+}
+
+.container:first-of-type {
+    padding-right: 12.5%;
+}
+
+.containerHead {
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+    border: 2px;
+    border-color: yellow;
+    border-style: solid;
+    max-width: 5000px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }

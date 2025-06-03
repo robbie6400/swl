@@ -12,6 +12,7 @@ ul {
 
   li {
     display: inline-block;
+    text-decoration: none;
   }
   
   li Link {
@@ -24,4 +25,22 @@ ul {
   
   li Link:visited {
     background-color: #000000;
+    color: yellow;
+    text-decoration: none;
+  }
+
+  li a {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  li a:visited {
+    text-decoration: none;
+    color: yellow;
+  }
+
+  li a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
   }

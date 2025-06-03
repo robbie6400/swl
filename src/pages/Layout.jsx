@@ -3,15 +3,15 @@ import {Outlet} from "react-router-dom";
 import HeadingText from '../components/HeadingText';
 import EmailMe from '../components/EmailMe';
 import Contact from '../components/Contact';
-import AlbumRelease from '../components/AlbumRelease';
+// import AlbumRelease from '../components/AlbumRelease';
 import SocialMediaIconsShort from '../components/SocialMediaIconsShort';
 
 const Layout = () => {
   return (
     <>    
-      <AlbumRelease />
-      <h1>Skyler Whitfield Live</h1>
+      {/* <AlbumRelease /> */}
       <SocialMediaIconsShort />
+      <h1>Skyler Whitfield Live</h1>
       <HeadingText />
       <Outlet />
       <EmailMe />
