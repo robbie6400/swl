@@ -2,9 +2,8 @@ import React from 'react'
 import Slideshow from "../components/Slideshow";
 import ShowDates from "../components/ShowDates";
 import YTvideos from "../components/YTvideos";
-import SoundCloud from "../components/SoundCloud";
 import Navbar1 from "../components/NavbarToShows";
-import AlbumRelease from '../components/AlbumRelease';
+import AlbumLink from '../components/AlbumLink';
 
 export default function Home() {
   return (
@@ -13,8 +12,7 @@ export default function Home() {
         <ShowDates />
         <Navbar1 />
         <YTvideos />
-        {/* <SoundCloud />  */}
-        <AlbumRelease /> <br />
+        <AlbumLink /> <br />
     </div>
   )
 }
