@@ -1,10 +1,10 @@
 .release {
     border: 10px;
-    border-color: #daa520;
-    background-color: yellow;
+    border-color: #9e0619;
+    background-color: #9e0619;
     border-radius: 5ch;
     border-style: solid;
-    fill: yellow;
+    fill: #9e0619;
     max-width: 5000px;
     padding: 3em;
     color: black;
@@ -22,8 +22,8 @@
     color: black;
     font-size: 200%;
     text-decoration: none;
-    border-color: goldenrod;
-    background-color: goldenrod;
+    border-color: #9e0619;
+    background-color: #9e0619;
 }
 
 .release a:active {

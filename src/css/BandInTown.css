@@ -1,0 +1,10 @@
+.showDatesTile {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.showTable {
+    display: 'flex';
+    text-align: left;
+    padding: 3%;
+}
