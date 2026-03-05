@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 
-export default function ShowDates({shows}) {
+export default function ShowDates30({shows}) {
   const current = new Date();
   const currMonth = current.getMonth();
   const currDay = current.getDate();
@@ -45,7 +45,7 @@ export default function ShowDates({shows}) {
         data-display-lineup="false"
         data-display-start-time="true"
         data-social-share-icon="false"
-        data-display-limit="300"
+        data-display-limit="15"
         data-date-format="dddd, MMMM Do, YYYY"
         data-date-orientation="horizontal"
         data-date-border-color="#4A4A4A"

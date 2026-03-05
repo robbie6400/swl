@@ -12,12 +12,11 @@ ul {
 
   li {
     display: inline-block;
-    text-decoration: none;
   }
   
   li Link {
     display: block;
-    color: yellow;
+    color: #9e0619;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -25,22 +24,4 @@ ul {
   
   li Link:visited {
     background-color: #000000;
-    color: yellow;
-    text-decoration: none;
-  }
-
-  li a {
-    color: yellow;
-    text-decoration: none;
-  }
-
-  li a:visited {
-    text-decoration: none;
-    color: yellow;
-  }
-
-  li a:hover {
-    text-decoration: none;
-    color: black;
-    background-color: yellow;
   }

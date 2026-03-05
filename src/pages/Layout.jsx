@@ -1,16 +1,17 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
+import AlbumRelease from '../components/AlbumRelease';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 import HeadingText from '../components/HeadingText';
 import EmailMe from '../components/EmailMe';
 import Contact from '../components/Contact';
-import SocialMediaIconsShort from '../components/SocialMediaIconsShort';
 
 const Layout = () => {
   return (
     <>    
-      <SocialMediaIconsShort />
-      <h1>Skyler Whitfield Live</h1>
+      {/* <AlbumRelease/> */}
       <HeadingText />
+      <SocialMediaIcons />
       <Outlet />
       <EmailMe />
       <Contact />

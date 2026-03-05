@@ -1,0 +1,39 @@
+.release {
+    border: 10px;
+    border-color: #9e0619;
+    background-color: #9e0619;
+    border-radius: 5ch;
+    border-style: solid;
+    fill: #9e0619;
+    max-width: 5000px;
+    padding: 3em;
+    color: black;
+    
+}
+
+.release a {
+    color: black;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+
+.release a:hover {
+    color: black;
+    font-size: 200%;
+    text-decoration: none;
+    border-color: #9e0619;
+    background-color: #9e0619;
+}
+
+.release a:active {
+    color: black;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+.release a:visited {
+    color: black;
+    font-size: 200%;
+    text-decoration: none;
+}
