@@ -8,8 +8,9 @@ export default function Shows() {
     <div>
         
         <Navbar2 />
-        <ShowDates />
-        {/* <CallShowsByMonths startMonth={1} endMonth={12} /> */}
+        {/* <ShowDates /> */}
+        <CallShowsByMonths startMonth={1} endMonth={12} />
+        <br /><br />
     </div>
   )
 }

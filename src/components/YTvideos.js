@@ -10,8 +10,8 @@ export default function YTvideos() {
         <iframe title="skylerPromo" width="40%" height="300px" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSkylerWhitfieldLive%2Fvideos%2F356016736269832%2F&show_text=false&width=560&t=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <figcaption>Skyler Whitfield Live Promo Video</figcaption>
           <br /><br />
-        <iframe title="skyJackPromo" width="40%" height="350px" src="https://www.youtube.com/embed/0yZR2CSM6_k" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        <figcaption>Skyjack Duo Promo Video</figcaption>   
+        <iframe title="skyJackPromo" width="40%" height="350px" src="https://www.youtube.com/embed/C8358-5rMJo?si=Nh0AOW0WJ__2jcoq" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <figcaption>Skyler Whifield Full Band Promo Video</figcaption>
           <br /><br />
         <iframe title="skylerFiddleDuo" width="40%" height="350px"  src="https://www.youtube.com/embed/36AdzFE5HBA" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         <figcaption>Skyler Whitfield & Chris Cary Promo Video</figcaption>

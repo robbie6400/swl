@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div>
         <Slideshow />
-        <ShowDates30 />
-        {/* <CallShowsByMonths startMonth={currMonth+1} endMonth={currMonth+2} /> */}
+        {/* <ShowDates30 /> */}
+        <CallShowsByMonths startMonth={currMonth+1} endMonth={currMonth+3} />
         <Navbar1 />
         <YTvideos />
         <SoundCloud />
