@@ -4,7 +4,7 @@ import CallShowsByMonths from "../components/CallShowsByMonths";
 import YTvideos from "../components/YTvideos";
 import SoundCloud from "../components/SoundCloud";
 import Navbar1 from "../components/NavbarToShows";
-import ShowDates30 from '../components/ShowDates30';
+import ShowDates from '../components/ShowDates';
 
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div>
         <Slideshow />
-        {/* <ShowDates30 /> */}
-        <CallShowsByMonths startMonth={currMonth+1} endMonth={currMonth+3} />
+        <ShowDates />
+        {/* <CallShowsByMonths startMonth={currMonth+1} endMonth={currMonth+3} /> */}
         <Navbar1 />
         <YTvideos />
         <SoundCloud />

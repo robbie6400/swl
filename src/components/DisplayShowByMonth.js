@@ -19,7 +19,7 @@ export default function DisplayShowByMonth( {monthParam} ) {
 
 
   useEffect(() => {
-    axios.get('https://skylershowsn-8b98.restdb.io/rest/showscollection?sort=startDateTime&apikey=64d3e666a3ea46156b978d02')
+    axios.get('https://skylershows-dce3.restdb.io/rest/skyler-whitfield-live-shows?&apikey=63a290def43a573dae095661')
     .then((incomingData) => {
       setAPIdata(incomingData.data)
       console.log(incomingData.data)
@@ -49,7 +49,7 @@ export default function DisplayShowByMonth( {monthParam} ) {
             
                   return (
                     <Table.Row>
-                      <Table.Cell> {currDisplayDate} : {venueArr.place} {guestDisplay} {cityStateDisplay} {timeDisplay}</Table.Cell>
+                      <Table.Cell>{data.Month} {data.Day} : {data.Place} {data.Guest} {data.City} {data.Time}</Table.Cell>
                     </Table.Row>
                   )
                 })}
